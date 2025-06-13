@@ -13,7 +13,7 @@ The submitted data is stored in a database and displayed in the Django admin pan
 ## 📸 Screenshots
 
 ### 🖥️ Form Page
-![Form Page](formpage_screenshot.png)![Form_Screenshot](https://github.com/user-attachments/assets/ab1d46ce-3f84-4e48-97fc-b906707f7fea)
+![Form Page]![Form_Screenshot](https://github.com/user-attachments/assets/ab1d46ce-3f84-4e48-97fc-b906707f7fea)
 
 
 ### 🗃️ Database Entry
