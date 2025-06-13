@@ -4,14 +4,14 @@ from home.models import person
 
 # Create your views here.
 def index(request):
-    if request.method == "POST":
+    if request.method == 'POST':
         first_name = request.POST.get("first_name")
         last_name = request.POST.get("last_name")
         age = request.POST.get("age")
         gender = request.POST.get("gender")
         email = request.POST.get("email")
         address = request.POST.get("address")
-        profile_pic = request.Files["upload_to"]
+        profile_pic = request.FILES["upload_to"]
 
         person.objects.create(
             first_name = first_name,
