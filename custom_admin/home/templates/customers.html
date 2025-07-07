@@ -1,0 +1,38 @@
+{%extends "base.html"%}
+{% block start %}
+
+<div class="content-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">All Customer data</h4>
+            <p class="card-description">Customers</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    {% for c in customers %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ c.first_name }}</td>
+                        <td>{{ c.last_name }}</td>
+                        <td>{{ c.email }}</td>
+                        <td>{{ c.phone_number }}</td>
+                        <td>{{ c.address }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
